@@ -88,16 +88,7 @@ iframe#playlist{
 
   #web-ring a:hover {
     text-decoration: underline;
-  }
- .fireflies{
- 	width: 300px;
- 	height: 300px;
- 	position: relative;
- 	margin-right: auto;
- 	margin-left: auto;
- 	display: block;
- }
-        
+  }      
 @keyframes body{
 	0%{
 		background-position: 0% 25%;
