@@ -23,7 +23,7 @@ body.bodyquestion{
 	font-family: Founders Grotesk;
 	font-weight: lighter;
 }
-.onpunc{
+#onpunc{
 	transform: rotate(-90deg);
 	transform-origin: left bottom;
 	position: fixed;
@@ -31,7 +31,7 @@ body.bodyquestion{
 	left: 3vw;
 	z-index: 500;
 }
-.byger{
+#byger{
 	transform: rotate(-90deg);
 	transform-origin: left bottom;
 	position: fixed;
@@ -87,23 +87,15 @@ a:hover{
 	color: gray;
 	cursor: url('assets/exclamationmark-cursor.png'), auto;
 }
-.questioncontainer{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	
-}
 .questionmark{
-	text-align: center;
 	position: fixed;
-	/*width: 10%;*/
+	width: 10%;
 	height: auto;
 	font-size: 70vw;
 	left: 8%;
 	font-family: Cooper Std;
 	font-weight: bolder;
 	top: -5vh;
-	
 }
 .pquestion{
 	position: absolute;
@@ -112,8 +104,7 @@ a:hover{
 	top: 4%;
 	font-family: Founders Grotesk;
 	font-weight: lighter;
-	font-size: 2rem;
-
+	font-size: 30px;
 }
 .apostrophemark{
 	position: fixed;
@@ -180,7 +171,6 @@ a:hover{
 	font-family: Cooper Std;
 	font-weight: bolder;
 	bottom: -30vh;
-	z-index: -5-;
 }
 .pcolon{
 	position: relative;
@@ -191,7 +181,6 @@ a:hover{
 	top: 35vh;
 	font-size: 2vw;
 	width: 120vw;
-	z-index: -50;
 }
 .rectangle1{
 	height: 100vh;
