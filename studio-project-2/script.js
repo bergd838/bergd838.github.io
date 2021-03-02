@@ -1,9 +1,6 @@
 $(document).ready(function() {
 
-const cursor = document.querySelector('.cursor');
-
-document.addEventListener('mousemove', e => {
-	cursor.setAttribute
-})
-
+$(document).ready(function(){
+      $("body").css('cursor','url(assets/exclamation-cursor.png),auto');
+});
 });

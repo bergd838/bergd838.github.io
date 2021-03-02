@@ -5,14 +5,22 @@
 	right: 80vw;
 	bottom: 0vh;
 }*/
-
-body#homepage{
+body{
 	height: 100vh;
 	cursor: url('assets/exclamationmark-cursor.png'), auto;
+	margin: 0;
+	padding: 0;
 }
-body.bodyquestion{
+/*body.bodyquestion{
 	height: 100vh;
 	cursor: url('../assets/questionmark-cursor.png'), auto;
+}*/
+body.bodyapostrophe{
+	height: auto;
+}
+body.bodycolon{
+	margin: 0;
+	padding: 0;
 }
 .cursor{
 	width: 20px;
@@ -22,63 +30,79 @@ body.bodyquestion{
 .sidetitle{
 	font-family: Founders Grotesk;
 	font-weight: lighter;
+	width: 3rem;
+	height: 100vh;
+	background-color: white;
+	position: fixed;
+ 	padding: 0px;
+ 	margin: 0px;
+ 	border-right: .125rem solid black;
 }
-.onpunc{
+#onpunc{
 	transform: rotate(-90deg);
 	transform-origin: left bottom;
 	position: fixed;
 	bottom: 0vh;
-	left: 3vw;
+	left: 2.5rem;
 	z-index: 500;
 }
-.byger{
+#byger{
 	transform: rotate(-90deg);
 	transform-origin: left bottom;
 	position: fixed;
-	top: 16vh;
-	left: 3vw;
+	left: 2.5rem;
 	font-weight: lighter;
 	z-index: 500;
+	padding-top: 8rem;
 }
-#titleline{
-  border-left: 2px solid black;
+/*#titleline{
+  border-left: .125rem solid black;
   height: 100vh;
   position: fixed;
-  left: 4%;
-}
-.introtext{
-	position: absolute;
+  left: 3rem;
+}*/
+.containerhome{
 	text-align: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin-left: auto;
+	/*margin-right: auto;*/
+	font-family: Founders Grotesk;
+	font-weight: bolder;
+}
+.box3{
+	font-size: 10vw;
+	align-items: center;
+	line-height: .8;
 	margin-left: auto;
 	margin-right: auto;
-	left: 7%;
-	/*bottom: 40vh;*/
-	width: 85%;
-	font-family: Founders Grotesk;
-	font-weight: lighter;
-	top: 10%;
+	display: inline-block;
+	padding-left: 3rem;
+	padding-right: 3rem;
 }
-h1#therearesome{
-	font-size: 10.5vw;
-	line-height: .8;
-}
-h3#somearent{
+.box4{
 	font-size: 2.5vw;
 }
 .navbar{
 	position: fixed;
-	right: 1%;
-	bottom: 15%;
+	right: 0rem;
 	font-family: Cooper Std;
-	font-size: 2vw;
+	font-size: 1.75rem;
 	z-index: 100;
+	width: 3rem;
+	height: 100vh;
+	background-color: white;
+	border-left: .125rem solid black;
 }
-#navline{
-	border-right: 2px solid black;
-  	height: 100vh;
-  	position: fixed;
-  	right: 4%;
+.navbar-contents{
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+  	left: 1rem;
 }
+
 a{
 	text-decoration: none;
 	color: black;
@@ -87,34 +111,67 @@ a:hover{
 	color: gray;
 	cursor: url('assets/exclamationmark-cursor.png'), auto;
 }
-.questioncontainer{
+.container{;
+	min-height: 100vh;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	
 }
-.questionmark{
+.box{
+	/*border: 1px solid gray;*/
+	color: var(--dark);
+	font-size: 3rem;
+	padding: 1rem;
 	text-align: center;
-	position: fixed;
-	/*width: 10%;*/
-	height: auto;
-	font-size: 70vw;
-	left: 8%;
-	font-family: Cooper Std;
-	font-weight: bolder;
-	top: -5vh;
-	
+	margin-left: auto;
+	margin-right: auto;
 }
-.pquestion{
+.box1 { 
+	font-size: 55vw; 
+	font-family: Cooper Std; 
+	width: 30rem;
+	margin-bottom: -8rem;
+	/*position: fixed;*/
+}
+.box2 { 
+	font-size: 1.75rem;
+	width: 40rem;
+	text-align: left;
+	font-family: Founders Grotesk; 
+	font-weight: lighter;
+	padding-right: 3rem;
+	padding-left: 3rem;
+	margin-right: 2rem;
+	margin-left: 2rem;
+	height: auto;
+}
+p#onapostrophes{
+	font-family: Cooper Std;
+	text-align: right;
+	padding: 0;
+	margin: 0;
+}
+/*.box1b{
+	font-size: 45rem;
+	font-family: Cooper Std;
+}*/
+
+/*.box1{
+	grid-column: span 2;
+}
+.box2{
+	grid-column: span 2;
+	font-family: Founders Grotesk;
+	height: auto;
+}*/
+/*.pquestion{
 	position: absolute;
 	width: 40vw;
 	right: 8%;
 	top: 4%;
 	font-family: Founders Grotesk;
 	font-weight: lighter;
-	font-size: 2rem;
-
-}
+	font-size: 30px;
+}*/
 .apostrophemark{
 	position: fixed;
 	width: 10%;
@@ -142,7 +199,7 @@ a:hover{
 	left: 15%;
 	font-family: Cooper Std;
 	font-weight: bolder;
-	bottom: -20vh;
+	/*bottom: -20vh;*/
 }
 .psemicolon{
 	position: absolute;
@@ -175,12 +232,12 @@ a:hover{
 .colonmark{
 	position: absolute;
 	height: auto;
-	font-size: 70vw;
+	font-size: 50rem;
 	left: 15%;
 	font-family: Cooper Std;
 	font-weight: bolder;
-	bottom: -30vh;
-	z-index: -5-;
+	/*bottom: -30vh;*/
+	padding: 0;
 }
 .pcolon{
 	position: relative;
@@ -189,25 +246,25 @@ a:hover{
 	font-weight: lighter;
 	left: 50vw;
 	top: 35vh;
-	font-size: 2vw;
+	font-size: 2rem;
 	width: 120vw;
-	z-index: -50;
+	z-index: -12;
 }
-.rectangle1{
+/*.rectangle1{
 	height: 100vh;
 	width: 4vw;
 	background-color: white;
 	position: fixed;
 	left: 0%;
-	z-index: 100;
-}
+	z-index: -100;
+}*/
 .rectangle2{
 	height: 100vh;
 	width: 4vw;
 	background-color: white;
 	position: fixed;
 	right: 0%;
-	z-index: 100;
+	z-index: -12;
 }
 .commamark{
 	position: fixed;
@@ -227,5 +284,48 @@ a:hover{
 	font-weight: lighter;
 	font-size: 30px;
 }
+@media only screen and (max-width: 375px){
+	.box2{
+		font-size: .85rem;
+		margin-top: 2rem;
+	}
+}
+@media only screen and (min-width: 800px){
+	.box2{
+		margin-left: auto;
+		margin-right: auto;
+		width: 47rem;
+		margin-top: 3rem;
+	}
+}
+@media only screen and (max-width: 400px){
+	.box1{
+		margin-bottom: -5rem;
+	}
+}
+@media only screen and (max-width: 1100px){
+	.containerhome{
+		position: absolute;
+		top: 16rem;
+  }
+}
+/*@font-face {
+  font-family: "Founders Grotesk";
+  font-weight: bolder;
+  src: url("assets/FoundersGrotesk-Bold.otf") format("otf"),
+       url("assets/FoundersGrotesk-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Founders Grotesk";
+  font-weight: lighter;
+  src: url("assets/FoundersGrotesk-Light.otf") format("otf"),
+       url("assets/FoundersGrotesk-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Cooper Std";
+  src: url("assets/CooperBlackStd.otf") format("otf"),
+       url("assets/CooperBlackStd.otf") format("opentype");
+}*/
+
 
 
