@@ -6,10 +6,10 @@ function setup() {
 
 function draw() {
 	if(mouseIsPressed == true) {
-		fill(550, 191, 88)
+		fill(255, 182, 193)
 		ellipse(mouseX, mouseY, 300, 100);
 	} else {
-		fill(150, 201, 175)
+		fill(255, 255, 255)
 		rect(mouseX, mouseY, 100, 50);
 	}
 }
