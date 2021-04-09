@@ -128,16 +128,15 @@ a:hover{
 	margin-left: auto;
 	margin-right: auto;
 /*	border: 1px solid black;
-*/	margin-bottom: 0rem
+*/
 
 }
 .box1 { 
 	font-size: 55vw; 
 	font-family: Cooper Std; 
 	width: 30rem;
-	margin-bottom: -8rem;
-	height: 45rem;
 	width: auto;
+	height: -5rem;
 	/*position: fixed;*/
 }
 #mark{
@@ -164,6 +163,10 @@ p#onapostrophes{
 	text-align: right;
 	padding: 0;
 	margin: 0;
+}
+#paragraph{
+	height: 2rem;
+	width: auto;
 }
 /*.box1b{
 	font-size: 45rem;
@@ -304,20 +307,23 @@ p#onapostrophes{
 		font-size: .85rem;
 		margin-top: 2rem;
 	}
+	.box1{
+		margin-bottom: 0rem;
+	}
 }
 @media only screen and (min-width: 800px){
 	.box2{
 		margin-left: auto;
 		margin-right: auto;
 		width: 47rem;
-		margin-top: 3rem;
+		/*margin-top: 3rem;*/
 	}
 }
-@media only screen and (max-width: 400px){
+/*@media only screen and (max-width: 400px){
 	.box1{
 		margin-bottom: -5rem;
 	}
-}
+}*/
 @media only screen and (max-width: 1100px){
 	.containerhome{
 		position: absolute;

@@ -71,6 +71,14 @@ iframe#playlist{
   	height: 80px;
   	width: auto;
 }
+iframe{
+	position: relative;
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	padding: 2rem;
+  	border: none;
+}
  #web-ring {
     position: fixed;
     top: 15px;
