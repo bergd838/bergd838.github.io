@@ -1,0 +1,51 @@
+h1#page-title{
+	font-size: 5rem;
+	display: block;
+	text-align: center;
+	margin: 3rem;
+	color: white;
+}
+
+img {
+	width: 20rem;
+	height: auto;
+	display: none;
+}
+
+img.active {
+	display: block;
+}
+
+body {
+	background-color: #8C0000;
+	font-family: Neue Haas Grotesk;
+	font-weight: lighter;
+	font-color: white;
+}
+
+.papermemory-container {
+	padding: 1rem;
+	border: .5px solid white;
+	border-radius: 25px;
+	color: white;
+	display: grid;
+	grid-gap: 2rem;
+	grid-template-columns: 1fr 1fr;
+}
+
+.papermemories{
+	height: 75rem;
+	width: auto;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 1rem;
+	margin: 0;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk";
+  src: url("assets/NHaasGroteskDSPro-15UltTh.ttf") format("ttf"),
+       url("assets/NHaasGroteskDSPro-15UltTh.ttf") format("truetype");
+}
