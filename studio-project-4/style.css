@@ -103,6 +103,11 @@ img{
 	height: auto;
 }
 
+figcaption{
+	text-align: center;
+	margin-top: 10px;
+}
+
 
 @font-face {
   font-family: "Neue Haas Grotesk";
