@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			This is where the browser gets the name of the site from
+		</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<script src="script.js" defer> </script>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<!-- <input type="text" placeholder="Type a color for art" id="input">
+    <div id="result"></div> -->
+    <h1 id="forart">Press a Button for Art</h1>
+    <div class="buttons">
+    	<button id="red" class="buttons" type="button" onclick="showRed()">Red</button> 
+    	<button id="blue" class="buttons" type="button" onclick="showBlue()">Blue</button>
+    	<!-- <a href="#blue1">Blue</a> -->
+    	<button id="yellow" class="buttons" type="button">Yellow</button>
+    </div>
+    <img style="display:none;" id="betyesaar" src="assets/blue/betyesaar.jpeg"/>
+    <!-- <div class="navbuttons">
+    	<button id="previous" class="navbuttons" type="button">←Previous</button>
+    	<button id="next" class="navbuttons" type="button" onclick="nextArt()">Next→</button>
+    </div> -->
+<div id="redslideshow">
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	<div class="mySlides fade">
+  		<img id="redslide1" src="assets/red/carmenherrera.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+  		<img src="assets/red/EllsworthKelly.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/red/HenriMatisse.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/red/JorindeVoigt.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/red/KevinAppel.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/red/LouiseBourgeois.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/red/markrothko21.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/red/nicolaesmaesthe lacemaker.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/red/PeterHalley.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/red/RalstonCrawford.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/red/RedPaintingbyAd Reinhart.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/red/TakeshiKawashima.jpeg">
+	</div>
+
+	<div class="mySlides fade" id="blueslide1">
+  		<img src="assets/blue/betyesaar.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+  		<img src="assets/blue/cingasamson.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/blue/danielarsham.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/blue/josephmarioni.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/blue/KatharinaFritsch.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/blue/leeufanfromline.jpg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/blue/LouiseBourgeois-1.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/blue/MarcelDuchamp.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/blue/marycassatladyattheteatable.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/blue/paulcezzanne.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/blue/sollewitt.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/blue/VincentvanGogh.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/blue/YokoOno.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/blue/YvesKlein.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/blue/yvesklein1.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/blue/yvesklein2.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="assets/blue/yveskleinanthropometrie.jpeg">
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+</body>
+</html>
