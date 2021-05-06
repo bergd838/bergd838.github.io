@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Show Me Art!
+		</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<script src="script.js" defer> </script>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<!-- <input type="text" placeholder="Type a color for art" id="input">
+    <div id="result"></div> -->
+    <h1 id="forart">Press a Button for Art</h1>
+    <div class="buttons">
+    	<button id="red" class="buttons" type="button" onclick="showRed()">Red</button> 
+    	<button id="blue" class="buttons" type="button" onclick="showBlue()">Blue</button>
+    	<!-- <a href="#blue1">Blue</a> -->
+    	<button id="yellow" class="buttons" type="button" onclick="showYellow()">Yellow</button>
+    </div>
+    <img style="display:none;" id="betyesaar" src="assets/blue/betyesaar.jpeg"/>
+    <!-- <div class="navbuttons">
+    	<button id="previous" class="navbuttons" type="button">←Previous</button>
+    	<button id="next" class="navbuttons" type="button" onclick="nextArt()">Next→</button>
+    </div> -->
+<div id="redslideshow">
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	<div class="mySlides fade" id="redslide1">
+    	<a href="https://www.metmuseum.org/art/collection/search/817303?searchField=All&amp;sortBy=Relevance&amp;deptids=21&amp;what=Canvas&amp;ft=red+paintings&amp;offset=0&amp;rpp=20&amp;pos=11"><img src="assets/red/carmenherrera.jpeg"></a>
+    	<figcaption>Carmen Herrera, "Iberic, "1949</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+  		<a href="https://www.moma.org/collection/works/72560?classifications=any&date_begin=Pre-1850&date_end=2021&direction=fwd&page=2&q=red&utf8=%E2%9C%93&with_images=1"><img src="assets/red/EllsworthKelly.jpeg"></a>
+  		<figcaption>Ellsworth Kelly, “Red-Orange (Rouge-Orange) from Suite of Twenty-Seven Color Lithographs,” 1964–65</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://www.moma.org/collection/works/78389?classifications=any&date_begin=Pre-1850&date_end=2021&direction=fwd&page=2&q=red&utf8=%E2%9C%93&with_images=1"><img src="assets/red/HenriMatisse.jpeg"></a>
+	  <figcaption>Henri Matisse, “The Red Studio,” Issy-les-Moulineaux, fall 1911</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://www.moma.org/collection/works/162600?classifications=any&date_begin=Pre-1850&date_end=2021&direction=fwd&page=2&q=red&utf8=%E2%9C%93&with_images=1"><img src="assets/red/JorindeVoigt.jpeg"></a>
+	  <figcaption>Jorinde Voigt, “13 Views RED from Gardens of Pleasure,” 2011</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://www.moma.org/collection/works/35474?classifications=any&date_begin=Pre-1850&date_end=2021&direction=fwd&page=5&q=red&utf8=%E2%9C%93&with_images=1"><img src="assets/red/KevinAppel.jpeg"></a>
+	  <figcaption>Kevin Appel, “House - South Rotation Red: 1 East,” 2000</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://www.moma.org/collection/works/105023?classifications=any&date_begin=Pre-1850&date_end=2021&direction=fwd&page=2&q=red&utf8=%E2%9C%93&with_images=1"><img src="assets/red/LouiseBourgeois.jpeg"></a>
+	  <figcaption>Louise Bourgeois, “The Red Shoes,” 2005</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://www.metmuseum.org/art/collection/search/484361?searchField=All&amp;sortBy=Relevance&amp;what=Canvas&amp;ft=red+paintings&amp;offset=100&amp;rpp=20&amp;pos=117"><img src="assets/red/markrothko21.jpeg"></a>
+	  <figcaption>Mark Rothko, “No. 21,” 1949</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://www.metmuseum.org/art/collection/search/436932?searchField=All&amp;sortBy=Relevance&amp;what=Canvas&amp;ft=red+paintings&amp;offset=120&amp;rpp=20&amp;pos=126"><img src="assets/red/nicolaesmaesthe lacemaker.jpeg"></a>
+	  <figcaption>Nicolaes Maes, “The Lacemaker,” 1656</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://www.moma.org/collection/works/143627?classifications=any&date_begin=Pre-1850&date_end=2021&direction=fwd&page=4&q=red&utf8=%E2%9C%93&with_images=1"><img src="assets/red/PeterHalley.jpeg"></a>
+	  <figcaption>Peter Halley, “Red Cell with Conduit,” 1982</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://www.moma.org/collection/works/67775"><img src="assets/red/RalstonCrawford.jpeg"></a>
+	  <figcaption>Ralston Crawford, “Red and Black (U.S.S. Nevada),” 1949</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://www.metmuseum.org/art/collection/search/489766?searchField=All&amp;sortBy=Relevance&amp;what=Canvas&amp;ft=red+paintings&amp;offset=100&amp;rpp=20&amp;pos=104"><img src="assets/red/RedPaintingbyAd Reinhart.jpeg"></a>
+	  <figcaption>Ad Reinhart, “Red Painting,” Buffalo, New York, 1952 </figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://www.moma.org/collection/works/72367?classifications=any&date_begin=Pre-1850&date_end=2021&direction=fwd&page=3&q=red&utf8=%E2%9C%93&with_images=1"><img src="assets/red/TakeshiKawashima.jpeg"></a>
+	  <figcaption>Takeshi Kawashima, “Red and Black A-A from an untitled series,” 1968</figcaption>
+	</div>
+
+	<div class="mySlides fade" id="blueslide1">
+  		<a href="https://whitney.org/collection/works/12580"><img src="assets/blue/betyesaar.jpeg"> </a>
+  		<figcaption>Betye Saar, “Mother and Children In Blue,” 1998</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+  		<a href="https://www.perrotin.com/exhibitions/cinga_samson-amadoda-akafani-afana-ngeentshebe-zodwa-men-are-different-though-they-look-alike/7045"><img src="assets/blue/cingasamson.jpeg"> </a>
+  		<figcaption>CINGA SAMSON, AMADODA AKAFANI, AFANA NGEENTSHEBE ZODWA “MEN ARE DIFFERENT THOUGH THEY LOOK ALIKE”
+FEBRUARY 22, 2020</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://leaflet.perrotin.com/view/102/artwork/55240/27943"><img src="assets/blue/danielarsham.jpeg"></a>
+	  <figcaption>DANIEL ARSHAM, “Cave of the Sublime,” Iceland, 2020</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://whitney.org/collection/works/13377"><img src="assets/blue/josephmarioni.jpeg"></a>
+	  <figcaption>Joseph Marioni, “Blue Painting,” 1999</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://www.moma.org/collection/works/273939?=undefined&direction=fwd&page=4"><img src="assets/blue/KatharinaFritsch.jpeg"></a>
+	  <figcaption>Katharina Fritsch, “8th Poster (Ibiza) (for Parkett, no. 100/101),” 2006, published 2017</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://www.moma.org/collection/works/136184"><img src="assets/blue/leeufanfromline.jpg"></a>
+	  <figcaption>Lee Ufan, “From Line,” 1974</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://www.moma.org/collection/works/60858?classifications=any&date_begin=Pre-1850&date_end=2021&direction=fwd&page=2&q=red&utf8=%E2%9C%93&with_images=1"><img id="louise" src="assets/blue/LouiseBourgeois-1.jpeg"></a>
+	  <figcaption>Louise Bourgeois, “Triptych for the Red Room,” 1994</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://www.moma.org/collection/works/217891?classifications=any&date_begin=Pre-1850&date_end=2021&q=DUCHAMP&utf8=%E2%9C%93&with_images=1"><img src="assets/blue/MarcelDuchamp.jpeg"></a>
+	  <figcaption>Marcel Duchamp, “Rotoreliefs (Optical Disks),” 1935, published 1953</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://www.metmuseum.org/art/collection/search/10391?searchField=All&amp;sortBy=Relevance&amp;what=Canvas&amp;ft=blue+paintings&amp;offset=20&amp;rpp=20&amp;pos=34"><img src="assets/blue/marycassatladyattheteatable.jpeg"></a>
+	  <figcaption>Mary Cassatt, “Lady at the Tea Table,” 1883-85</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://www.metmuseum.org/art/collection/search/435868?searchField=All&amp;sortBy=Relevance&amp;what=Canvas&amp;ft=blue+paintings&amp;offset=60&amp;rpp=20&amp;pos=68"><img src="assets/blue/paulcezzanne.jpeg"></a>
+	  <figcaption>Paul Cézanne, “The Card Players,” 1890–92</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://whitney.org/collection/works/47136"><img src="assets/blue/sollewitt.jpeg"></a>
+	  <figcaption>Sol LeWitt, “Untitled (Lines in Four Directions, Blue),” 1989</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://www.moma.org/collection/works/79802?classifications=any&date_begin=Pre-1850&date_end=2021&q=starry&utf8=%E2%9C%93&with_images=1"><img src="assets/blue/VincentvanGogh.jpeg"></a>
+	  <figcaption>Vincent van Gogh, “The Starry Night,” Saint Rémy, June 1889</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://lmcc.net/river-to-river-festival/river-to-river-festival-2019/yoko-ono-add-color/"><img src="assets/blue/YokoOno.jpeg"></a>
+	  <figcaption>Yoko Ono, “Add Color (Refugee Boat),” (1960/2019)</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://www.moma.org/collection/works/80103"><img src="assets/blue/YvesKlein.jpeg"></a>
+	  <figcaption>Yves Klein, “Blue Monochrome,” 1961</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+	  <a href="https://www.sothebys.com/en/articles/the-radical-nudes-of-yves-kleins-anthropometries"><img src="assets/blue/yvesklein1.jpeg"></a>
+	  <figcaption>Yves Klein, “ANTHROPOMETRIE DE L’EPOQUE BLEUE, (ANT 82),” 1960<</figcaption>
+	</div>
+
+	<div class="mySlides fade" id="yellowslide1">
+    	<a href="https://www.moma.org/collection/works/6903?classifications=any&date_begin=Pre-1850&date_end=2021&q=CALDER&utf8=%E2%9C%93&with_images=1"><img src="assets/yellow/AlexanderCalder.jpeg"></a>
+    	<figcaption>Alexander Calder, “Calder's Circus,” Whitney Museum of American, Art April 20-July 11, 1972</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+  		<a href="https://www.artsy.net/artwork/amoako-boafo-yellow-turtleneck"><img id="amoako" src="assets/yellow/amoakoboafo.png"></a>
+  		<figcaption>Amoako Boafo, “Yellow Turtleneck,” 2018</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+  		<a href="https://www.metmuseum.org/art/collection/search/481434?searchField=All&amp;sortBy=Relevance&amp;what=Canvas&amp;ft=yellow+paintings&amp;offset=20&amp;rpp=20&amp;pos=37"><img src="assets/yellow/conradmarcorelli.jpeg"></a>
+  		<figcaption>Conrad Marca-Relli, “Yellow Collage,” 1960</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+  		<a href="https://whitney.org/collection/works/7418"><img src="assets/yellow/JackYoungerman.jpeg"></a>
+  		<figcaption>Jack Youngerman, “Blue April Yellow,” 1970</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+  		<a href="https://whitney.org/collection/works/40287"><img src="assets/yellow/JaneKent.jpeg"></a>
+  		<figcaption>Jane Kent, “Untitled [black and yellow],” 1986</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+  		<a href="https://www.metmuseum.org/art/collection/search/436321?searchField=All&amp;sortBy=Relevance&amp;what=Canvas&amp;ft=yellow+paintings&amp;offset=20&amp;rpp=20&amp;pos=35"><img src="assets/yellow/jeanhonorefragonard.jpeg"></a>
+  		<figcaption>Jean Honore Fragonard, “Roman Interior,” 1760</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+  		<a href="https://whitney.org/collection/works/11100"><img src="assets/yellow/JosefAlbers.jpeg"></a>
+  		<figcaption>Josef Albers, “Homage to the Square - Orange and Yellow,” 1970</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+  		<a href="https://www.perrotin.com/artists/Madsaki/328/the-velvet-underground-nico-2/49706"><img src="assets/yellow/madsaki1.jpeg"></a>
+  		<figcaption>MADSAKI, “THE VELVET UNDERGROUND & NICO 2,” 2015</figcaption>
+	</div>
+
+	<!-- <div class="mySlides fade">
+  		<a href="https://www.artsy.net/artwork/madsaki-happiness-overdose-yellow-p-1"><img src="assets/yellow/madsaki2.jpeg"></a>
+  		<figcaption>MADSAKI, “Happiness Overdose Yellow,” 2020</figcaption>
+	</div> -->
+
+	<div class="mySlides fade">
+  		<a href="https://topcat77.tumblr.com/post/153949984777/study-for-the-dance-1932-henri-matisse"><img src="assets/yellow/matissestudyforthedance.jpeg"></a>
+  		<figcaption>Henri Matisse, “Study for ‘The Dance,’” 1932</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+  		<a href="https://delaive.com/index-takashi-murakami.php?subpage=takashi_murakami&page=zoom_takashi_murakami74"><img src="assets/yellow/murakami.jpeg"></a>
+  		<figcaption>Takashi Murakami, “An Homage to Monogold 1960 A,” 2012</figcaption>
+	</div>
+
+	<div class="mySlides fade">
+  		<a href="https://www.christies.com/features/Lot-7-Expert-view-Takeo-Yamaguchi-10648-7.aspx"><img src="assets/yellow/takaeoyamaguchi.jpeg"></a>
+  		<figcaption>Takeo Yamaguchi “oeuvre, Yellow Quadrangle,” 1959</figcaption>
+	</div>
+
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+</body>
+</html>
