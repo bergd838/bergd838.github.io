@@ -1,5 +1,24 @@
 console.log("colors");
 
+const colors = ['red', 'blue'];
+const ranges = {};
+
+for (let i = 0; i < colors.length; i++) {
+	if (i === colors.length - 1) {
+		ranges[colors[i]] = range(indexOfSlide(`${colors[i]}slide1`) + 1, document.getElementsByClassName('mySlides').length);
+	} else {
+		ranges[colors[i]] = range(indexOfSlide(`${colors[i]}slide1`) + 1, indexOfSlide(`${colors[i + 1]}slide1`) + 1);
+	}
+}
+
+function indexOfSlide(id) {
+	return [...document.getElementsByClassName('mySlides')].findIndex((i) => i.id === id);
+}
+
+function range(from, to) {
+	return [...new Array(to - from).keys()].map((i) => i + from);
+}
+
 //  function showBlue() {
 // 	// var sourceOfPicture = "assets/blue/betyesaar.jpeg";
 // 	// var img = document.getElementById('betyesaar')
@@ -9,21 +28,12 @@ console.log("colors");
 // }
 
 function showRed() {
-	var showredslides = document.getElementById("redslideshow")
-	document.getElementById("redslideshow").style.opacity = "1";
-	// document.querySelector("#red").style.backgroundColor = "red";
+	showSlides(slideIndex = ranges.red[0]);
 }
 
-function showBlue(){
-	// var showblueslides = document.getElementById("blueslideshow")
-	// document.getElementById("blueslideshow").style.opacity = "0";
-	// var hideredslides = document.getElementById("redslideshow")
-	// document.getElementById("redslideshow").style.opacity = "0";
-	var showredslides = document.getElementById("redslideshow")
-	document.getElementById("redslideshow").style.opacity = "1";
-	var element = document.getElementById("blueslide1");
+function showBlue() {
+	showSlides(slideIndex = ranges.blue[0]);
 }
-
 
 // function nextArt() {
 // 	var sourceOfPicture = "assets/blue/cingasamson.jpeg";
@@ -38,9 +48,6 @@ function showBlue(){
 // 	document.getElementById('.blueslideshow').style.opacity = "1";
 // }
 
-var slideIndex = 1;
-showSlides(slideIndex);
-
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
@@ -50,18 +57,24 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  var i;
+	document.getElementById('redslideshow').style.opacity = '1';
+
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
+  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+      slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
+  slides[slideIndex-1].style.display = "block";
+  // dots[slideIndex-1].className += " active";
 
+	const currentColor = Object.entries(ranges).find((i) => i[1].includes(slideIndex))[0];
+	document.querySelector(`button#${currentColor}`).style.backgroundColor = currentColor;
+	document.querySelectorAll(`.buttons button:not(#${currentColor})`).forEach((button) => {
+		button.style.backgroundColor = '';
+	});
+}
